@@ -1,0 +1,17 @@
+/* login */
+.login {
+    width: 400px; margin: 50px auto;
+    text-align: center;
+}
+.login h1{
+
+}
+.login ul{
+    list-style: none;
+}
+.login ul li{
+    margin-bottom: 15px;
+}
+.login ul li span{
+    float:left;
+}
