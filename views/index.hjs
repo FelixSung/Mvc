@@ -3,12 +3,34 @@
     <head>
         <title>{{ title }}</title>
         <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+        <link rel='stylesheet' href='/stylesheets/custom.css' />
     </head>
 <body>
-    <div style="width: 400px; margin: 50px auto;">
+    <div class="box tc">
         <h1>{{ title }}</h1>
-        <p>Welcome to {{ title }}</p>
-        <a href="/login">登录</a>
+        <p><a href="/users">{{#am}}上午好{{/am}}{{#pm}}下午好{{/pm}}{{#night}}晚上好{{/night}}，宋飞</a></p>
+    </div>
+    <div class="box">
+        <ul class="list">
+            {{#productList}}
+            <li>
+                <div class="inner">
+                    <div class="pic-wrap">
+                        <div class="ipic img-vertical">
+                            <a href="//item.taobao.com/item.htm?spm=a217f.1766217.1998475082.1.sxop7v&amp;id=45736942006" class="img-wrap" target="_blank" data-spm-anchor-id="a217f.1766217.1998475082.1">
+                                <img width="290" src="{{image}}" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h3 class="title"><a href="#" target="_blank" data-spm-anchor-id="a217f.1766217.1998475082.4">{{name}}</a></h3>
+                        <div class="price">抢新价 <em class="ms-yh ">¥</em><span>{{price}}</span></div>
+                        <a class="btn" href="//item.taobao.com/item.htm?spm=a217f.1766217.1998475082.5.sxop7v&amp;id=45736942006" target="_blank" data-spm-anchor-id="a217f.1766217.1998475082.5">立即抢</a>
+                    </div>
+                </div>
+            </li>
+            {{/productList}}
+        </ul>
     </div>
 </body>
 </html>

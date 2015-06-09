@@ -1,3 +1,73 @@
+/* index */
+.box{
+    width:1190px;
+    margin:0px 0px;
+}
+.tc {
+    text-align: center;
+}
+ul.list {
+    width: 100%;
+    margin:0px 0px;
+    padding:0px 0px;
+    list-style: none;
+}
+ul.list li{
+    text-align: left;
+    width: 288px;
+    margin:0px 10px 10px 0px;
+    float:left;
+}
+ul.list li .inner {
+    position: relative;
+    float: left;
+    margin: 0 10px 10px 0;
+    display: inline;
+    width: 288px;
+    height: 518px;
+    overflow: hidden;
+    border: 1px solid #e6e6e6;
+    background: #fff;
+}
+ul.list li .inner .pic-wrap{
+    height: 435px;
+    width: 290px;
+    background: #fff;
+    overflow: hidden;
+}
+ul.list li .inner .info{
+    position: relative;
+    height: 70px;
+    padding: 5px 10px;
+}
+ul.list li .inner .info h3.title {
+    margin-bottom: 5px;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+ul.list li .inner .info .price{
+    padding: 5px 0;
+    line-height: 26px;
+    color: #999;
+    vertical-align: top;
+}
+ul.list li .inner .info .btn{
+    display: block;
+    position: absolute;
+    padding: 5px 20px;
+    right: 10px;
+    bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: #f56293;
+}
+
 /* login */
 .login {
     width: 400px; margin: 50px auto;
