@@ -12,7 +12,7 @@ var session = new NodeSession({secret: 'Q3UBzdH9GEfiRCTKbi5MTPyChpzXLsTD'});
 
 //define routes
 var routes = require('./routes/index');
-//var users = require('./routes/users');
+var product = require('./routes/product');
 var login = require('./routes/login');
 //define user routes
 var profile = require('./routes/user/profile');
@@ -47,6 +47,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/', routes);
+app.use('/product',product);
 app.use('/login', login);
 app.use('/user',function(req,res,next){
   var user = req.session.get('user');
