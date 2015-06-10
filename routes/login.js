@@ -9,6 +9,7 @@ router.route('/').get(function(req,res){
     res.writeHead(200,
         {'Content-Type':'application/Json;charset=UTF-8'});
     if(req.body.userName.trim() == 'admin' && req.body.password.trim() == '111111'){
+        req.session.set('user',{id:1,userName:'宋飞'});
         res.write('{"isSuccess":true}');
     }else{
         res.write('{"isSuccess":false,"errMsg":"用户名或密码不正确！"}');

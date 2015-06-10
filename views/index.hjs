@@ -32,5 +32,6 @@
             {{/productList}}
         </ul>
     </div>
+{{>footer}}
 </body>
 </html>

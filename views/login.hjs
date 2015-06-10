@@ -30,7 +30,7 @@
                 dataType:"json",
                 success:function(result){
                     if(result.isSuccess){
-                        location.href = '/';
+                        location.href = '/user';
                     }
                     else{
                         alert(result.errMsg);

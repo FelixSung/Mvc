@@ -18,7 +18,8 @@ router.get('/', function(req, res, next) {
           {id:6,name:'性感露背连衣裤',price:259,image:'http://img.alicdn.com/bao/uploaded/TB1qp6QIXXXXXXMXFXXSutbFXXX.jpg'},
           {id:7,name:'上品行欧洲站夏季彩色两件套连衣裙',price:108,image:'http://img.alicdn.com/bao/uploaded/TB1HHaOIXXXXXbOXFXXSutbFXXX.jpg'},
           {id:8,name:'MIUCOT恤+绣花七分牛仔裤套装',price:218,image:'http://img.alicdn.com/bao/uploaded/TB1IrW7IXXXXXaKXpXXSutbFXXX.jpg'},
-      ]
+      ],
+      partials:{footer:'footer'}
   });
 });
 

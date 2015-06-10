@@ -1,0 +1,5 @@
+.git
+.idea
+logs
+node_modules
+sessions
